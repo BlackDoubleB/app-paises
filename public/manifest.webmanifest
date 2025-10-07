@@ -1,0 +1,22 @@
+{
+  "name": "Explorador de Países",
+  "short_name": "Países",
+  "description": "Explora, filtra y guarda tus países favoritos del mundo 🌍. Consulta información sobre regiones, población y más.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#e8ecff",
+  "theme_color": "#0d1333",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
