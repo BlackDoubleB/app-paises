@@ -126,12 +126,12 @@ export default function PanelFiltros({ dataApi }: { dataApi: Country[] }) {
               </svg>
             </div>
           ) : (
-            filtrosCard.dataPage.map((x) => (
+            filtrosCard.dataPage.map((x,i) => (
               <div
                 className="h-full max-w-80 w-full"
-                key={x.cca3 ?? x.name.common}
+                key={x.cca3 ?? x.name.common} 
               >
-                <Card paises={x} />
+                <Card paises={x} priority={i === 0}  />
               </div>
             ))
           )}

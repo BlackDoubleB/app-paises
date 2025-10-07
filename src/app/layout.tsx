@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 
   metadataBase: new URL("https://explorador-de-paises-rb.vercel.app"),
   manifest: "/manifest.webmanifest",
-  themeColor: "#0d1333",
 
   openGraph: {
     title: "Explorador de Países",

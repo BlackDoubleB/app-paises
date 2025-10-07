@@ -6,7 +6,6 @@ type Props = {
 };
 export default function Pais({ nombrePais, setNombrePais }: Props){
    
-    console.log("Pais", nombrePais);
     return(
         <div className="flex flex-col gap-2 ">
             <label className="font-bold">Pais</label>

@@ -29,9 +29,9 @@ export default function Client({ dataApi }: { dataApi: Country[] }) {
         {filtroFavoritos.dataPage.length === 0 ? (
           <CardSinResultados></CardSinResultados>
         ) : (
-          filtroFavoritos.dataPage.map((x) => (
+          filtroFavoritos.dataPage.map((x, i) => (
             <div className="max-w-80 w-full h-fit" key={x.cca3 ?? x.name.common}>
-              <Card paises={x} />
+              <Card paises={x} priority={i === 0}  />
             </div>
           ))
         )}

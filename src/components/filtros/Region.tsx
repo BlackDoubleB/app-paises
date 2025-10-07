@@ -20,7 +20,7 @@ export default function Region({
 }: Props) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="font-bold">Region</label>
+      <label className="font-bold" id="region-label">Region</label>
       <div className="relative ">
         <div className="absolute h-full flex items-center right-10">
           <button className={`text-neutral-500 hover:text-neutral-950 cursor-pointer ${
@@ -46,7 +46,7 @@ export default function Region({
           </button>
         </div>
         <Select value={nombreRegion} onValueChange={setNombreRegion}>
-          <SelectTrigger className="w-full overflow-hidden">
+          <SelectTrigger className="w-full overflow-hidden" aria-labelledby="region-label">
             <SelectValue placeholder="Filtrar" />
           </SelectTrigger>
           <SelectContent>

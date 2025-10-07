@@ -4,7 +4,7 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-5 px-5 py-20 ">
           <div className="flex gap-5">
             <a className="cursor-pointer" href="https://www.linkedin.com/in/reynablacidoaparicio"
-                target="_blank">
+                target="_blank" aria-label="Link de Linkedin">
               <svg
                 
                 xmlns="http://www.w3.org/2000/svg"
@@ -23,7 +23,7 @@ export default function Footer() {
               </svg>
             </a>
             <a className="cursor-pointer" href="https://github.com/BlackDoubleB"
-                target="_blank">
+                target="_blank" aria-label="Link de github">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="1.5em"

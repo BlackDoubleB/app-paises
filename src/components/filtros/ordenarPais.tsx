@@ -19,7 +19,7 @@ export default function OrdenarPais({ orden, setOrden }: Props) {
       <div className="flex flex-wrap justify-center   items-center gap-2 w-full">
         <div className="w-fit">
           <Select value={orden} onValueChange={setOrden}>
-          <SelectTrigger>
+          <SelectTrigger aria-label="Ordenar por">
             <SelectValue placeholder="Ordenar por" />
           </SelectTrigger>
           <SelectContent>

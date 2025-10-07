@@ -13,9 +13,10 @@ import { useEffect, useState } from "react";
 
 type Props = {
   paises: Country;
+  priority?: boolean;
 };
 
-export default function Card({ paises }: Props) {
+export default function Card({ paises, priority }: Props) {
   const nombre = paises.name.common;
 
   const isFav = useFavorites((s) => s.has(nombre));
@@ -42,6 +43,7 @@ export default function Card({ paises }: Props) {
                 src={paises.flags.png}
                 fill
                 alt={paises.flags.alt || `Bandera de ${paises.name.common}`}
+                priority={priority}
               />
               </div>
            
@@ -59,7 +61,8 @@ export default function Card({ paises }: Props) {
               <Image
                 src={paises.flags.png}
                 alt={paises.flags.alt || ""}
-                fill
+                fill 
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 className="rounded-md border border-neutral-300 shadow-md shadow-neutral-300"
               />
             </div>
