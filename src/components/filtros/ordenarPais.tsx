@@ -7,7 +7,6 @@ import {
   SelectValue,
 } from "@/components/ui/Select";
 import { Orden } from "@/lib/types";
-import { Button } from "@nextui-org/react";
 
 type Props = {
   orden: Orden;
