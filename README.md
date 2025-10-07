@@ -3,7 +3,7 @@
 Aplicación web desarrollada con **Next.js 14**, **TypeScript** y **Zustand**, que permite **explorar, filtrar y guardar países favoritos** de todo el mundo.
 
 Consulta información sobre regiones, población y más, con una interfaz moderna, intuitiva y totalmente responsiva.
-
+``
 ## Características principales
 
 - 🔍 **Búsqueda por nombre** de país
