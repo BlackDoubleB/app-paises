@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Explorador de Países
 
-## Getting Started
+**Explorador de Países** es una aplicación web desarrollada con **Next.js 14**, **TypeScript** y **Zustand**, que permite **explorar, filtrar y guardar países favoritos** de todo el mundo.  
+Consulta información sobre regiones, población y más, con una interfaz moderna, intuitiva y totalmente responsiva.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características principales
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- 🔍 **Búsqueda por nombre** de país  
+- 🌍 **Filtro por región**
+- 👥 **Filtro por población mínima y máxima**
+- 📄 **Paginación** para una navegación más cómoda entre los resultados
+- ⭐ **Lista de favoritos** persistente gracias a Zustand
+- 📱 **Diseño responsivo** (adaptado para móviles y escritorio)
+- 🧭 **Optimización SEO y metadatos** (Open Graph, manifest, sitemap, robots)
+- ⚡ **Interfaz rápida** y con transiciones suaves
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tecnologías utilizadas
 
-## Learn More
+- [Next.js 14 (App Router)](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Zustand](https://zustand-demo.pmnd.rs/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [REST Countries API](https://restcountries.com/)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🖼️ Captura de pantalla
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Vista previa](./public/https://res.cloudinary.com/doublebl/image/upload/v1759812537/explorador_paises_tkec6u.png)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🚀 Cómo ejecutar el proyecto
+
+1. Clona este repositorio:
+   ```bash
+   git clone https://github.com/BlackDoubleB/app-paises.git
+
+2. Instala las dependencias:
+
+pnpm install
+# o npm install
+
+
+3. Inicia el servidor de desarrollo:
+
+pnpm run dev
+
+
+4. Abre en tu navegador:
+👉 http://localhost:3000
+
+
+##  Estructura del proyecto
+src/
+ ├── app/
+ │   ├── page.tsx           → Página principal (lista de países)
+ │   ├── favoritos/         → Página de países favoritos
+ │   ├── not-found.tsx      → Página personalizada 404
+ │   ├── layout.tsx         → Layout global
+ │   ├── robots.ts          → Configuración SEO
+ │   └── sitemap.ts         → Sitemap del sitio
+ ├── components/            → Componentes UI
+ ├── lib/                   → Tipos y utilidades
+ ├── store/                 → Estado global con Zustand
+public/
+ ├── favicon.ico
+ ├── icon-192.png
+ ├── icon-512.png
+ └── manifest.webmanifest
+
+##  🔗 Enlace de despliegue
+https://explorador-de-paises.vercel.app
+
+## 👩‍💻 Autora
+Reyna Blacido (BlackDoubleB)
+💫 Desarrolladora web en formación apasionada por la tecnología y el diseño.

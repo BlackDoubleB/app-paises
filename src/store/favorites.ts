@@ -1,10 +1,9 @@
-// /src/store/favorites.ts
 "use client";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
 type FavState = {
-  items: string[];                     // nombres de países favoritos
+  items: string[];                    
 };
 
 type FavActions = {
@@ -41,6 +40,6 @@ export const useFavorites = create<FavStore>()(
 
       has: (name) => get().items.includes(name),
     }),
-    { name: "fav-countries" } // clave en localStorage
+    { name: "fav-countries" }
   )
 );
