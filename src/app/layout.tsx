@@ -23,6 +23,8 @@ export const metadata: Metadata = {
     "Explora, filtra y guarda tus países favoritos del mundo 🌍. Consulta información sobre regiones, población y más, con una interfaz moderna y rápida.",
 
   metadataBase: new URL("https://explorador-de-paises-rb.vercel.app"),
+  manifest: "/manifest.webmanifest",
+  themeColor: "#0d1333",
 
   openGraph: {
     title: "Explorador de Países",
