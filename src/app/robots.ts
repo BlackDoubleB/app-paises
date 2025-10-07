@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://explorador-de-paises.vercel.app/sitemap.xml",
+    sitemap: "https://explorador-de-paises-rb.vercel.app/sitemap.xml",
   };
 }

@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   description:
     "Explora, filtra y guarda tus países favoritos del mundo 🌍. Consulta información sobre regiones, población y más, con una interfaz moderna y rápida.",
 
-  metadataBase: new URL("https://explorador-de-paises.vercel.app"),
+  metadataBase: new URL("https://explorador-de-paises-rb.vercel.app"),
 
   openGraph: {
     title: "Explorador de Países",
     description:
       "Explora, filtra y guarda tus países favoritos del mundo 🌍 con información detallada.",
-    url: "https://explorador-de-paises.vercel.app",
+    url: "https://explorador-de-paises-rb.vercel.app",
     siteName: "Explorador de Países",
     images: [
       {

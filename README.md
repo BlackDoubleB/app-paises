@@ -93,7 +93,7 @@ public/
 
 
 ## 🔗 Enlace de despliegue
-https://explorador-de-paises.vercel.app  
+https://explorador-de-paises-rb.vercel.app  
 
 
 ## 👩‍💻 Autora
